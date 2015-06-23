@@ -8,6 +8,7 @@ def get_birth_path_num(birthdate)
     number = number[0].to_i + number[1].to_i
  
     if number > 9
+        number = number.to_s
         number = number[0].to_i + number[1].to_i
     end
     
@@ -39,12 +40,50 @@ def get_message(birth_path_num)
     end
 end
 
+def setup_index_view
+    birthdate = params[:birthdate]
+    birth_path_num = get_birth_path_num(birthdate)
+    @message = get_message(birth_path_num)
+    erb :index
+end
+
+def valid_birthdate(input)
+    if (input.length == 8 && !input.match(/^[0-9]+[0-9]$/).nil?)
+        return true
+    else
+        return false
+    end
+end
+
 get '/' do
-    "Hello World"
+    erb :form
+end
+
+post '/' do
+    birthdate = params[:birthdate].gsub("-", "")
+    if valid_birthdate(birthdate)
+        birth_path_num = get_birth_path_num(birthdate)
+        redirect "/message/#{birth_path_num}"
+    else
+        @error = "Sorry, that wasn't a valid date. Use the format MMDDYYYY."
+        erb :form
+    end
+end
+
+get '/:birthdate' do
+    #@message = setup_index_view
+    setup_index_view
+    #erb :index
+end
+
+get '/message/:birth_path_num' do
+    birth_path_num = params[:birth_path_num].to_i
+    @message = get_message(birth_path_num)
+    erb :index
 end
 
 get '/allmessages/' do
-    @messages = "One is the leader. The number one indicates the ability to stand alone, and is a strong vibration. Ruled by the Sun.\n
+    @messages = "One is the leader. The number one indicates the ability to stand alone, and is a strong vibration. Ruled by the Sun.\n\n
 
     Two is the mediator and peace-lover. The number two indicates the desire for harmony. It is a gentle, considerate, and sensitive vibration. Ruled by the Moon.\n
     
@@ -61,16 +100,11 @@ get '/allmessages/' do
     Eight is the manager. Number Eight is a strong, successful, and material vibration. Ruled by Saturn.\n
     
     Nine is the teacher. Number Nine is a tolerant, somewhat impractical, and sympathetic vibration. Ruled by Mars."
+    
     "#{@messages}"
     erb :allmessages
 end
 
-get '/:birthdate' do
-	birthdate = params[:birthdate]
-	birth_path_num = get_birth_path_num(birthdate)
-	@message = get_message(birth_path_num)
-	erb :index
-end
 
 
 
