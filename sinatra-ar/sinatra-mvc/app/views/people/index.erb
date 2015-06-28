@@ -4,6 +4,8 @@
 		<!-- <th>ID</th> -->
 		<th>Name</th>
 		<th>Birthdate</th>
+		<th>Edit</th>
+		<th>Delete</th>
 	</thead>
 	<tbody>
 		<% @people.each do |person| %>
@@ -19,6 +21,15 @@
 				<td>
 					<!--<%= "#{person.birthdate}" %> -->
 					<%= "#{person.birthdate.strftime("%m")}/#{person.birthdate.strftime("%d")}/#{person.birthdate.strftime("%Y")}" %>
+				</td>
+				<td>
+					<a href="<%= "/people/#{person.id}/edit" %>">Edit</a>
+				</td>
+				<td>
+					<form action="<%= "/people/#{person.id}" %>" method="post">
+						<input type="hidden" name="_method" value="delete" />
+						<input type="submit" value="Delete" />
+					</form>
 				</td>
 			</tr>
 		<% end %>
