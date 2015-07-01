@@ -1,0 +1,34 @@
+#form-title {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	/*font-variant: small-caps;*/
+}
+
+body {
+	background: url(https://download.unsplash.com/photo-1422640805998-18a4dd89bec2) blue;
+	background-size: cover;
+	background-repeat: no-repeat;                /* repeat */
+	color: white;
+}
+
+.birthdate {
+	margin-bottom: 50px;
+}
+
+.name {
+	margin-bottom: 10px;
+}
+
+#button-title {
+	font-family: 'Lobster', cursive;
+	font-size: x-large;
+	color: #d8707c;
+}
+
+.btn-large {
+	background-color: #494b69;
+}

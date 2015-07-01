@@ -1,6 +1,7 @@
 require 'sinatra'
 
 get '/' do
+    @person = Person.new #this line is new
     erb :form
 end
 
