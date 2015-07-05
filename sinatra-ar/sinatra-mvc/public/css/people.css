@@ -1,4 +1,4 @@
-#form-title {
+.form-title {
 	font-weight: bold;
 	color: white;
 	text-align: center;
@@ -8,11 +8,44 @@
 	/*font-variant: small-caps;*/
 }
 
-body {
-	background: url(https://download.unsplash.com/photo-1422640805998-18a4dd89bec2) blue;
+#database-link {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.index-bg {
+	height:100vh;
+	width: 100vw;
+	background: url(https://download.unsplash.com/photo-1422640805998-18a4dd89bec2);
 	background-size: cover;
 	background-repeat: no-repeat;                /* repeat */
-	color: white;
+}
+
+.new-bg {
+    height:100vh;
+    width: 100vw;
+    background: url(https://download.unsplash.com/photo-1429305336325-b84ace7eba3b);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.edit-bg {
+	height:100vh;
+	width: 100vw;
+    background: url(https://download.unsplash.com/photo-1428954376791-d9ae785dfb2d);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.message-bg {
+	height:100vh;
+	width: 100vw;
+    background: url(https://download.unsplash.com/photo-1425036458755-dc303a604201);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .birthdate {
@@ -23,7 +56,7 @@ body {
 	margin-bottom: 10px;
 }
 
-#button-title {
+.button-title {
 	font-family: 'Lobster', cursive;
 	font-size: x-large;
 	color: #d8707c;
@@ -32,3 +65,17 @@ body {
 .btn-large {
 	background-color: #494b69;
 }
+
+#message-look {
+	color: grey;
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	margin: 100px 200px 0px 200px;
+}
+
+h2 {
+	margin-left: 100px;
+}
+
+
