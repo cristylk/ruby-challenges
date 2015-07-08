@@ -1,4 +1,8 @@
-<div class="index-bg">
+<% if !@error.nil? %>
+  <p class="error-p"><%= @error %></p>
+<% end %>
+
+<div class="index-bg bg">
 <h1 class="text-center form-title">Find Your Numerology Number</h1>
 
 <div class="col-md-4"></div>

@@ -1,3 +1,35 @@
+body {
+	background-color: black;
+}
+
+h2 {
+	margin-left: 100px;
+}
+
+.error-p {
+	color: red;
+	font-size: 14px;
+}
+
+.edit-bg {
+    background: url(https://download.unsplash.com/photo-1428954376791-d9ae785dfb2d);
+}
+
+.new-bg {
+    background: url(https://download.unsplash.com/photo-1429305336325-b84ace7eba3b);
+}
+
+.index-bg {
+	background: url(https://download.unsplash.com/photo-1422640805998-18a4dd89bec2);
+}
+
+.bg {
+	height:100vh;
+	width: 100vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .form-title {
 	font-weight: bold;
 	color: white;
@@ -16,36 +48,16 @@
 	font-size: 22px;
 }
 
-.index-bg {
-	height:100vh;
-	width: 100vw;
-	background: url(https://download.unsplash.com/photo-1422640805998-18a4dd89bec2);
-	background-size: cover;
-	background-repeat: no-repeat;                /* repeat */
-}
-
-.new-bg {
-    height:100vh;
-    width: 100vw;
-    background: url(https://download.unsplash.com/photo-1429305336325-b84ace7eba3b);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.edit-bg {
-	height:100vh;
-	width: 100vw;
-    background: url(https://download.unsplash.com/photo-1428954376791-d9ae785dfb2d);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .message-bg {
 	height:100vh;
 	width: 100vw;
     background: url(https://download.unsplash.com/photo-1425036458755-dc303a604201);
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .birthdate {
@@ -60,22 +72,58 @@
 	font-family: 'Lobster', cursive;
 	font-size: x-large;
 	color: #d8707c;
-}
-
-.btn-large {
 	background-color: #494b69;
 }
 
-#message-look {
-	color: grey;
+.form-group {
+	color: white;
+}
+
+.message {
+	padding: 150px 200px 50px 200px;
+}
+
+.numerology {
+	padding: 50px 200px;
+}
+
+.numerology-name {
+	color: white;
 	text-align: center;
-	font-size: 22px;
-	font-family: 'Roboto', sans-serif;
-	margin: 100px 200px 0px 200px;
+	padding-top: 150px;
 }
 
-h2 {
-	margin-left: 100px;
+.new-person {
+  
 }
 
+.edit-person {
 
+}
+
+.errors {
+  color: #dd0000;
+  border: 1px solid #dd0000;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+ .people-list-title {
+ 	color: white;
+ }
+
+ .table-margin {
+ 	padding-right: 20px;
+ }
+
+ .table-indent {
+ 	margin: 50px;
+ }
+
+ #table-birthdate {
+ 	color: white;
+ }
+
+ #table-name {
+ 	font-family: 'Roboto', sans-serif;
+ 	font-size: 20px;
+ }

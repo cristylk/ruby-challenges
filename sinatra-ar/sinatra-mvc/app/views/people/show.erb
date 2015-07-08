@@ -1,2 +1,5 @@
-<h2><%= "#{@person.first_name} #{@person.last_name}, #{@person.birthdate.strftime("%m")}/#{@person.birthdate.strftime("%d")}/#{@person.birthdate.strftime("%Y")}" %></h2>
-	<p><%= "#{@message}" %></p>
+<div class="message-bg">
+<h2 class="numerology-name"><%= "#{@person.first_name} #{@person.last_name}, #{@person.birthdate.strftime("%m")}/#{@person.birthdate.strftime("%d")}/#{@person.birthdate.strftime("%Y")}" %></h2>
+<p class="numerology"><%= "#{@message}" %></p>
+<a class="btn btn-default button-title" href="http://localhost:9292/people" role="button">Back to the Database</a>
+</div>

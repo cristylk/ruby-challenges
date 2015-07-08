@@ -1,11 +1,11 @@
-<h1>People</h1>
-<table>
+<h1 class="people-list-title table-indent">People</h1>
+<table class="table-indent">
 	<thead>
 		<!-- <th>ID</th> -->
-		<th>Name</th>
-		<th>Birthdate</th>
-		<th>Edit</th>
-		<th>Delete</th>
+		<th class="people-list-title">Name</th>
+		<th class="people-list-title">Birthdate</th>
+		<th class="people-list-title">Edit</th>
+		<th class="people-list-title">Delete</th>
 	</thead>
 	<tbody>
 		<% @people.each do |person| %>
@@ -13,16 +13,16 @@
 				<!-- <td>
 					<%= "#{person.id}" %>
 				</td> -->
-				<td>
+				<td class="table-margin" id="table-name">
 					<a href="<%= "/people/#{person.id}" %>">
 					<%= "#{person.first_name} #{person.last_name}" %>
 				</a>
 				</td>
-				<td>
+				<td class="table-margin" id="table-birthdate">
 					<!--<%= "#{person.birthdate}" %> -->
 					<%= "#{person.birthdate.strftime("%m")}/#{person.birthdate.strftime("%d")}/#{person.birthdate.strftime("%Y")}" %>
 				</td>
-				<td>
+				<td class="table-margin">
 					<a href="<%= "/people/#{person.id}/edit" %>">Edit</a>
 				</td>
 				<td>
