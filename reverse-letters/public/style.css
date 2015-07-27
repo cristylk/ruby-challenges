@@ -1,16 +1,24 @@
+
 body {
-	background: url(https://download.unsplash.com/photo-1432691301971-c8b920198bd7);
-	height:100vh;
-	width: 100vw;
+	background: url(https://download.unsplash.com/photo-1433833103303-111110aae192);
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-top: 40px;	
+	height:100vh;
+	width: 100vw;
+}
+
+.main-page {
+	
 }
 
 h1 {
 	font-family:'montserrat', arial;
 	color: #80d0f7;
 	text-align: center;
+}
+
+#first-line {
+	padding-top: 40px;
 }
 
 .index-label {
@@ -35,3 +43,7 @@ ul {
 	margin: 50px;
 }
 
+.redirect {
+	text-align: center;
+	margin: 150px;
+}
