@@ -23,6 +23,12 @@ h2 {
 	background: url(https://download.unsplash.com/photo-1422640805998-18a4dd89bec2);
 }
 
+.people-database-bg {
+	/*background: url(https://download.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1);*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .bg {
 	height:100vh;
 	width: 100vw;
@@ -80,7 +86,8 @@ h2 {
 }
 
 .message {
-	padding: 150px 200px 50px 200px;
+	padding: 150px 300px 50px 300px;
+	font-size: 30px;
 }
 
 .numerology {
@@ -109,6 +116,7 @@ h2 {
 }
  .people-list-title {
  	color: white;
+ 	font-size: 18px;
  }
 
  .table-margin {
