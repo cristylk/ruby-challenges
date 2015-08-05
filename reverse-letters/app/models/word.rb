@@ -19,6 +19,10 @@ def self.find_anagrams(word)
 
 	word.each_with_index do |single, index|
 	remaining_letters = word.select {|x| x != single}
+	#potential_anagram = single + remaining_letters.join
+	#if Word.find_by_text(potential_anagram).present?
+	#	array2 << potential_anagram
+	#end
 	array2 << single + remaining_letters.join
 	
 	array2 << single + reverse_letters(remaining_letters).join

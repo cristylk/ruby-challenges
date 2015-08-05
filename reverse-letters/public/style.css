@@ -47,3 +47,11 @@ ul {
 	text-align: center;
 	margin: 150px;
 }
+
+.error {
+	color: red;
+	font-family: 'montserrat', arial;
+	font-style: italic;
+	text-align: center;
+	font-size: 20px;
+}
